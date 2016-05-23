@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		AFD9DD041CF3797F00E33C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9DD031CF3797F00E33C13 /* AppDelegate.swift */; };
-		AFD9DD061CF3797F00E33C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9DD051CF3797F00E33C13 /* ViewController.swift */; };
-		AFD9DD091CF3797F00E33C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD9DD071CF3797F00E33C13 /* Main.storyboard */; };
 		AFD9DD0B1CF3797F00E33C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD9DD0A1CF3797F00E33C13 /* Assets.xcassets */; };
 		AFD9DD0E1CF3797F00E33C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD9DD0C1CF3797F00E33C13 /* LaunchScreen.storyboard */; };
+		AFD9DD181CF37A7800E33C13 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9DD171CF37A7800E33C13 /* YTPlayerView.m */; };
+		AFD9DD1B1CF37AD400E33C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD9DD1A1CF37AD400E33C13 /* Main.storyboard */; };
+		AFD9DD1E1CF37AF800E33C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9DD1C1CF37AF800E33C13 /* ViewController.swift */; };
+		AFD9DD1F1CF37AF800E33C13 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9DD1D1CF37AF800E33C13 /* PlayerViewController.swift */; };
+		AFD9DD211CF380BF00E33C13 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9DD201CF380BF00E33C13 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AFD9DD001CF3797E00E33C13 /* YouTubeVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD9DD031CF3797F00E33C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFD9DD051CF3797F00E33C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AFD9DD081CF3797F00E33C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD9DD0A1CF3797F00E33C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD9DD0D1CF3797F00E33C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFD9DD0F1CF3797F00E33C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD9DD151CF37A7600E33C13 /* YouTubeVideoSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YouTubeVideoSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		AFD9DD161CF37A7800E33C13 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		AFD9DD171CF37A7800E33C13 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		AFD9DD1A1CF37AD400E33C13 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AFD9DD1C1CF37AF800E33C13 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFD9DD1D1CF37AF800E33C13 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		AFD9DD201CF380BF00E33C13 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,27 @@
 		AFD9DD021CF3797F00E33C13 /* YouTubeVideoSample */ = {
 			isa = PBXGroup;
 			children = (
+				AFD9DD201CF380BF00E33C13 /* logo.png */,
+				AFD9DD1C1CF37AF800E33C13 /* ViewController.swift */,
+				AFD9DD1D1CF37AF800E33C13 /* PlayerViewController.swift */,
 				AFD9DD031CF3797F00E33C13 /* AppDelegate.swift */,
-				AFD9DD051CF3797F00E33C13 /* ViewController.swift */,
-				AFD9DD071CF3797F00E33C13 /* Main.storyboard */,
+				AFD9DD1A1CF37AD400E33C13 /* Main.storyboard */,
 				AFD9DD0A1CF3797F00E33C13 /* Assets.xcassets */,
 				AFD9DD0C1CF3797F00E33C13 /* LaunchScreen.storyboard */,
 				AFD9DD0F1CF3797F00E33C13 /* Info.plist */,
+				AFD9DD151CF37A7600E33C13 /* YouTubeVideoSample-Bridging-Header.h */,
+				AFD9DD191CF37A8800E33C13 /* YouTubeApi */,
 			);
 			path = YouTubeVideoSample;
+			sourceTree = "<group>";
+		};
+		AFD9DD191CF37A8800E33C13 /* YouTubeApi */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9DD161CF37A7800E33C13 /* YTPlayerView.h */,
+				AFD9DD171CF37A7800E33C13 /* YTPlayerView.m */,
+			);
+			name = YouTubeApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +143,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD9DD1B1CF37AD400E33C13 /* Main.storyboard in Resources */,
 				AFD9DD0E1CF3797F00E33C13 /* LaunchScreen.storyboard in Resources */,
 				AFD9DD0B1CF3797F00E33C13 /* Assets.xcassets in Resources */,
-				AFD9DD091CF3797F00E33C13 /* Main.storyboard in Resources */,
+				AFD9DD211CF380BF00E33C13 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +157,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD9DD061CF3797F00E33C13 /* ViewController.swift in Sources */,
+				AFD9DD1E1CF37AF800E33C13 /* ViewController.swift in Sources */,
+				AFD9DD1F1CF37AF800E33C13 /* PlayerViewController.swift in Sources */,
 				AFD9DD041CF3797F00E33C13 /* AppDelegate.swift in Sources */,
+				AFD9DD181CF37A7800E33C13 /* YTPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AFD9DD071CF3797F00E33C13 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFD9DD081CF3797F00E33C13 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AFD9DD0C1CF3797F00E33C13 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -251,10 +267,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YouTubeVideoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iCloudTest.YouTubeVideoSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YouTubeVideoSample/YouTubeVideoSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,10 +281,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YouTubeVideoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iCloudTest.YouTubeVideoSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YouTubeVideoSample/YouTubeVideoSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
