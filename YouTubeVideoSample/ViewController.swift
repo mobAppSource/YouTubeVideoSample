@@ -119,16 +119,30 @@ extension ViewController{
                     desiredValueDict["description"] = snippetDict["description"]
                     desiredValueDict["thumbnail"] = ((snippetDict["thumbnail"] as! Dictionary<NSObject, AnyObject>)["default"] as! Dictionary<NSObject, AnyObject>)["url"]
                     //Save the channel's uploaded videos playlists ID
-                    desiredValueDict["thumbnail"] = ((snippetDict["thumbnail"] as! Dictionary<NSObject, AnyObject>)["default"] as! Dictionary<NSObject, AnyObject>)["url"]
+                    desiredValueDict["playlistID"] = ((snippetDict["contentDetails"] as! Dictionary<NSObject, AnyObject>)["relatedPlaylists"] as! Dictionary<NSObject, AnyObject>)["uploads"]
                     
+                    //Append the desitredValueDict dictionary to the following array
+                    self.channelDataArray.append(desiredValueDict)
                     
+                    //reload the tableView
+                    self.tblVideos.reloadData()
+                    
+                    //Load the next channel data(if exist)
+                    self.channelIndex += 1
+                    if self.channelIndex < self.desiredChannelsArray.count{
+                        self.getChannelDetails(useChannelIDParam)
+                    }else{
+                        self.viewWait.hidden = true
+                    }
                 }catch{
                     print("HTTP Error: \(HTTPStatusCode): \(error)")
                 }
                 
+            }else{
+                print("HTTP Status Code:  \(HTTPStatusCode)")
+                print("Error while loading channel details: \(error)")
             }
         }
-        
         
     }
     
