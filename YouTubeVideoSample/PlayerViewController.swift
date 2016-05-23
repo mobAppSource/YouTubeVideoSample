@@ -1,9 +1,9 @@
 //
 //  PlayerViewController.swift
-//  YTDemo
+//  YouTubeVideoSample
 //
-//  Created by Gabriel Theodoropoulos on 27/6/15.
-//  Copyright (c) 2015 Appcoda. All rights reserved.
+//  Created by Master on 5/23/16.
+//  Copyright © 2016 Master. All rights reserved.
 //
 
 import UIKit
